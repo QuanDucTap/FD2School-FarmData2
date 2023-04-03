@@ -16,10 +16,7 @@ cy.get("[data-cy=tray-selection]").should("be.visible")
         cy.get ("[data-cy=tray-seedings]").check()
         
         cy.get("[data-cy=tray-area-selection]>[data-cy=dropdown-input]").should("be.visible")
-    //    cy.get("[data-cy=tray-area-selection] >>[data-cy=dropdown-input] [data-cy=option1] ").should('have.text',"arv")
-    // cy.get("[data-cy=tray-area-selection] >[data-cy=dropdown-input] >  [data-cy=option1]").should('have.text',"arv")
-
-    // cy.get("[data-cy=tray-area-selection] > [data-cy=option1]")
+    
 
 })
 
