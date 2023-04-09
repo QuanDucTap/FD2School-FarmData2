@@ -7,16 +7,14 @@ describe('Test the tray seeding ', () => {
     })
 
 
-    it("Check the tray seeding section when 'Tray' is selected ", () => {
-cy.get ("[data-cy=tray-seedings]").check()
-cy.get("[data-cy=tray-selection]").should("be.visible")
+it("Check the tray seeding section when 'Tray' is selected ", () => {
+    cy.get ("[data-cy=tray-seedings]").check()
+    cy.get("[data-cy=tray-selection]").should("be.visible")})
 
-    })
-
-    it("Check the dropdown Area ", () => {
-        cy.get ("[data-cy=tray-seedings]").check()
-        
-        cy.get("[data-cy=tray-area-selection]>[data-cy=dropdown-input]").should("be.visible")
+it("Check the dropdown Area ", () => {
+    cy.get ("[data-cy=tray-seedings]").check()
+    cy.get("[data-cy=tray-area-selection]>[data-cy=dropdown-input]").should("be.visible")
+    cy.get("[data-cy=tray-area-selection]>[data-cy=dropdown-input]").should("have.text","")
 
 })
 
