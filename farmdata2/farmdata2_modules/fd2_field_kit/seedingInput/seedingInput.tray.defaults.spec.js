@@ -48,7 +48,7 @@ it("Check tray field", () => {
     cy.get("[data-cy=tray-seedings]").click();
     cy.get("[data-cy=num-tray-input]").should("be.visible")
                                     .should("not.be.disabled")
-                                    .children().should("be.empty")
+                                    .children().should("have.value","")
                                     .type(100).should("have.value", 100);
 });
 
@@ -57,7 +57,7 @@ it("Check seed field", () => {
     cy.get("[data-cy=tray-seedings]").click();
     cy.get("[data-cy=num-seed-input").should("be.visible")
                                     .should("not.be.disabled")
-                                    .children().should("be.empty")
+                                    .children().should("have.value", "")
                                     .type(110).should("have.value", 110);
 });
 
