@@ -1,0 +1,23 @@
+Progress report
+
+Assignment:
+
+Our team including Duc, Quan, Tap has been assigned the issue #206 Seeding Report: Test Direct Seeding Summary Values , which consists of 5  subtasks:
+
+Purpose of these tests: Checking that the values reported for the following quantities agree with the data in the table:
+-Total Row Feet Planted
+-Total Bed Feet Planted
+-Total Hours
+-Average Row Feet/Hour
+-Average Bed Feet/Hour
+Accomplishment:
+
+Completing all of 5 subtasks of the issues, specifically Quan was assigned the first two testings, Duc was assigned the third one, and Tap worked on the last two tasks.
+Challenging :
+
+We have faced some troubles when working with the asynchronous code in Cypress. An example is how to access and handling variable out of then scope effectively. In the end, some of team member has managed to find out the solution and complete the tests on time.
+Next step :
+
+Reviewing our code quality to make sure that code is consistent and well-formatted.
+Making a draft pull request to the upstream repository.
+Waiting for feedback from reviewer and make necessary changes if needed.
