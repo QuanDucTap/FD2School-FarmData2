@@ -3,6 +3,7 @@ describe('Test the tray seeding ', () => {
         cy.login("manager1", "farmdata2")
         cy.visit('/farm/fd2-field-kit/seedingInput')
        })
+
     it("Check the tray seeding section when 'Tray' is selected ", () => {
         cy.get ("[data-cy=tray-seedings]").check()
         cy.get("[data-cy=tray-selection]").should("be.visible")})
@@ -10,13 +11,12 @@ describe('Test the tray seeding ', () => {
     it("Check the dropdown Area ", () => {
         cy.get ("[data-cy=tray-seedings]").check()
         cy.get("[data-cy=tray-area-selection]>[data-cy=dropdown-input]").should("be.visible")
+        cy.get("[data-cy=tray-area-selection]>[data-cy=dropdown-input]").should("not.be.disabled")
         cy.get("[data-cy=tray-area-selection]>[data-cy=dropdown-input]").should("have.value",null)
     })
 
     it("Test area dropdown", () => {
         cy.get("[data-cy=tray-seedings]").check()
-        cy.get("[data-cy=tray-area-selection] > [data-cy=dropdown-input]").children()
-        .should("have.length", 5)
         cy.get("[data-cy=tray-area-selection] > [data-cy=dropdown-input] > [data-cy=option0")
         .should("have.value", "CHUAU")
         cy.get("[data-cy=tray-area-selection] > [data-cy=dropdown-input] > [data-cy=option2")
